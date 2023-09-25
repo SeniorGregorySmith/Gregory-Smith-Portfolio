@@ -38,6 +38,18 @@
     <!-- jquery cdn link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
+    <style>
+      .card-img-top:hover{
+        /* transform: scale(1.1); */
+        animation: crescendo 1.5s alternate infinite ease-in;
+      }
+
+      @keyframes crescendo {
+        0%   {transform: scale(.8);}
+        100% {transform: scale(1.5);}
+      }
+    </style>
+
   </head>
   <body>
     <!-- navbar starts -->
@@ -174,7 +186,7 @@
     <section class="skill mt-5 py-5" id="about">
       <div class="row justify-content-evenly">
         <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
+          <div class="row justify-content-evenly ">
             <div class="col-10 col-md-6">
               <div class="progress-card ms-3 ms-md-0">
                 <div class="circular-progress html-css">
@@ -283,7 +295,7 @@
           <div class="post col-md-3 react all col-10 mt-3 mt-md-0" data-aos="fade-up">
             <div class="card">
               <a href="https://steamlevelup.com/" target="_blank" rel="noopener">
-                <img src="images/react-p.png" class="card-img-top" alt="..." />
+                <img src="images/react-p.png" class="card-img-top" alt="..."/>
                 <div class="card-body text-center">
                   <h4 class="card-title">MERN</h4>
                   <span class="badge bg-secondary badge-pill">HTML&CSS</span>
