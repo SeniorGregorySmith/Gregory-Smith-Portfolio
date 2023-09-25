@@ -3,7 +3,7 @@ let htmlProgress = document.querySelector(".html-css"),
   htmlValue = document.querySelector(".html-progress");
 
 let htmlStartValue = 0,
-  htmlEndValue = 90,
+  htmlEndValue = 99,
   htmlspeed = 30;
 
 let progresshtml = setInterval(() => {
@@ -24,7 +24,7 @@ let javascriptProgress = document.querySelector(".javascript"),
   javascriptValue = document.querySelector(".javascript-progress");
 
 let javascriptStartValue = 0,
-  javascriptEndValue = 75,
+  javascriptEndValue = 99,
   jsspeed = 30;
 
 let progressjs = setInterval(() => {
@@ -40,33 +40,33 @@ let progressjs = setInterval(() => {
   }
 }, jsspeed);
 
-// php progress circular bar 
-let phpProgress = document.querySelector(".php"),
-  phpValue = document.querySelector(".php-progress");
+// ecommerce progress circular bar 
+let ecommerceProgress = document.querySelector(".ecommerce"),
+  ecommerceValue = document.querySelector(".ecommerce-progress");
 
-let phpStartValue = 0,
-  phpEndValue = 80,
-  phpspeed = 30;
+let ecommerceStartValue = 0,
+  ecommerceEndValue = 85,
+  ecommercespeed = 30;
 
-let progressphp = setInterval(() => {
-  phpStartValue++;
+let progressecommerce = setInterval(() => {
+  ecommerceStartValue++;
 
-  phpValue.textContent = `${phpStartValue}%`;
-  phpProgress.style.background = `conic-gradient(#20c997 ${
-    phpStartValue * 3.6
+  ecommerceValue.textContent = `${ecommerceStartValue}%`;
+  ecommerceProgress.style.background = `conic-gradient(#e8402a ${
+    ecommerceStartValue * 3.6
   }deg, #ededed 0deg)`;
 
-  if (phpStartValue == phpEndValue) {
-    clearInterval(progressphp);
+  if (ecommerceStartValue == ecommerceEndValue) {
+    clearInterval(progressecommerce);
   }
-}, phpspeed);
+}, ecommercespeed);
 
 // reactjs progress circular bar 
 let reactProgress = document.querySelector(".reactjs"),
   reactValue = document.querySelector(".reactjs-progress");
 
 let reactStartValue = 0,
-  reactEndValue = 30,
+  reactEndValue = 89,
   rjsspeed = 30;
 
 let progressreact = setInterval(() => {
@@ -82,6 +82,47 @@ let progressreact = setInterval(() => {
   }
 }, rjsspeed);
 
+// wordpress progress circular bar 
+let wordpressProgress = document.querySelector(".wordpress"),
+  wordpressValue = document.querySelector(".wordpress-progress");
+
+let wordpressStartValue = 0,
+  wordpressEndValue = 94,
+  wordpressspeed = 30;
+
+let progresswordpress = setInterval(() => {
+  wordpressStartValue++;
+
+  wordpressValue.textContent = `${wordpressStartValue}%`;
+  wordpressProgress.style.background = `conic-gradient(#be3baa ${
+    wordpressStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (wordpressStartValue == wordpressEndValue) {
+    clearInterval(progresswordpress);
+  }
+}, wordpressspeed);
+
+// php progress circular bar 
+let phpProgress = document.querySelector(".php"),
+  phpValue = document.querySelector(".php-progress");
+
+let phpStartValue = 0,
+  phpEndValue = 97,
+  phpspeed = 30;
+
+let progressphp = setInterval(() => {
+  phpStartValue++;
+
+  phpValue.textContent = `${phpStartValue}%`;
+  phpProgress.style.background = `conic-gradient(#20c997 ${
+    phpStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (phpStartValue == phpEndValue) {
+    clearInterval(progressphp);
+  }
+}, phpspeed);
 
 // filter using javascript
 $(document).ready(function () {

@@ -188,6 +188,12 @@ body{
 .reactjs-progress{
     color: #3f396d;
 }
+.wordpress-progress{
+    color: #be3baa;
+}
+.ecommerce-progress{
+    color: #e8402a;
+}
 .text{
     font-size: 1.2rem;
     font-weight: 500;
